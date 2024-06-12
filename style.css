@@ -90,13 +90,20 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    height: 130px;
+    height: 170px;
     background-color: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
 }
 
 .top-header {
     border: 1px solid red;
     padding: 15px 0px 20px 30px;
+}
+
+.bot-header {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
 
 .left-header {
@@ -124,7 +131,85 @@ input {
 .right-header {
     border: 1px solid black;
     display: inline-block;
-    margin-left: 200px;
+    margin-left: 350px;
+    width: 200px;
+    height: 50px;
+}
+
+.right-header > span {
+    font-weight: bold;
+}
+
+.bell-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.user-picture {
+    border-radius: 50%;
+}
+
+.top-user {
+    height: 30px;
+    width: 30px;
+    transform: translateY(7px);
+    margin-right: 10px;
+}
+
+.bot-user {
+    height: 60px;
+    width: 60px;
+}
+
+.left-header-bottom {
+    border: 1px solid green;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.left-header-bottom > .user-name-header-bottom > span {
+    font-weight: bold;
+}
+
+.left-header-bottom > .user-name-header-bottom > span:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.left-header-bottom > .user-name-header-bottom > span:last-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.user-picture-header-bottom {
+    border: 1px solid blue;
+    width: 60px;
+}
+
+.user-name-header-bottom {
+    border: 1px solid pink;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.right-header-bottom-button {
+    border: 1px solid red;
+    width: 400px;
+    margin-left: 210px;
+}
+
+.right-header-bottom-button > button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #1e293b;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /* END OF HEADER CSS*/
@@ -132,7 +217,7 @@ input {
 main {
     position: absolute;
     border: 1px solid green;
-    margin: 120px 0px 0px 250px;
+    margin: 200px 0px 0px 250px;
     position: absolute;
     right: 0;
     left: 0;
