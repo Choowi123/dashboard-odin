@@ -216,9 +216,10 @@ input {
 
 main {
     position: absolute;
-    border: 1px solid green;
-    margin: 200px 0px 0px 250px;
+    /* border: 1px solid green; */
+    margin: 165px 0px 0px 250px;
     position: absolute;
+    height: 100vh;
     right: 0;
     left: 0;
     background-color: #e2e8f0;
@@ -238,12 +239,40 @@ main {
     margin: 10px 10px 0px 10px;
 }
 
+.left-main > span {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 .sub-content {
-    border: 1px solid red;
-    height: 120px;
+    /* border: 1px solid red; */
+    border-left: 5px solid #1e293b;
+    border-radius: 5px;
+    height: 160px;
     width: 350px;
     margin: 0px 20px 20px 0px;
     background-color: #f8fafc;
+}
+
+.sub-content-text {
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 90%;
+}
+
+.sub-content-text > span {
+    font-weight: bold;
+}
+
+.sub-content-text > p {
+    margin-top: 5px;
+    line-height: 17px;
+}
+
+.sub-content-icon {
+    right: 0;
 }
 
 .right-main {
