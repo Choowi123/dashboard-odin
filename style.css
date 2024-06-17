@@ -10,16 +10,16 @@
     /* border: 1px solid blue; */
     background-color: #1e293b;
     color: #f1f5f9;
-    height: 100;
+    height: 100vh;
     width: 250px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     overflow: hidden;
 }
 
 .dashboard {
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
 }
 
 svg {
@@ -33,14 +33,14 @@ svg {
 }
 
 .dash-icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .dashboard-text {
     font-size: 1.5rem;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 
@@ -58,7 +58,7 @@ li {
     overflow: hidden; */
     /* border: 1px solid red; */
     font-size: 1rem;
-    padding: 10px 90px 10px 20px;
+    padding: 5px 90px 5px 20px;
     margin-left: 10px;
 }
 
@@ -70,7 +70,7 @@ a {
     padding: 10px 90px 10px 20px; */
     /* border: 1px solid white; */
     margin: 0px 0px 0px -40px;
-    padding: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
     overflow: hidden;
     width: 250px;
 }
@@ -92,16 +92,16 @@ header {
     left: 0;
     height: 170px;
     background-color: #f8fafc;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 5px solid #e2e8f0;
 }
 
 .top-header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 15px 0px 20px 30px;
 }
 
 .bot-header {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
 }
@@ -129,7 +129,7 @@ input {
 }
 
 .right-header {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
     margin-left: 350px;
     width: 200px;
@@ -162,7 +162,7 @@ input {
 }
 
 .left-header-bottom {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 400px;
     display: flex;
     flex-direction: row;
@@ -184,18 +184,18 @@ input {
 }
 
 .user-picture-header-bottom {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 60px;
 }
 
 .user-name-header-bottom {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     width: 300px;
     margin-left: 10px;
 }
 
 .right-header-bottom-button {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 400px;
     margin-left: 210px;
 }
@@ -212,6 +212,10 @@ input {
     margin-left: 20px;
 }
 
+.right-header-bottom-button > button:hover {
+    cursor: pointer;
+}
+
 /* END OF HEADER CSS*/
 
 main {
@@ -219,44 +223,45 @@ main {
     /* border: 1px solid green; */
     margin: 165px 0px 0px 250px;
     position: absolute;
-    height: 100vh;
+    height: 100;
     right: 0;
     left: 0;
     background-color: #e2e8f0;
 }
 
 .main-content {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
 .left-main {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 750px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 30px;
 }
 
-.left-main > span {
-    font-size: 1rem;
+.left-main > span, .right-main > span {
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .sub-content {
     /* border: 1px solid red; */
+    box-shadow: 3px 3px #a3b0c2;
     border-left: 5px solid #1e293b;
     border-radius: 5px;
-    height: 160px;
+    height: 195px;
     width: 350px;
     margin: 0px 20px 20px 0px;
     background-color: #f8fafc;
 }
 
 .sub-content-text {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20px;
     margin-left: 15px;
     width: 90%;
@@ -272,23 +277,110 @@ main {
 }
 
 .sub-content-icon {
-    right: 0;
+    /* border: 1px solid red; */
+    width: 100px;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.sub-content:last-child > .sub-content-icon {
+    margin-top: 75px;
+}
+
+.sub-content:nth-child(4) > .sub-content-icon {
+    margin-top: 60px;
+}
+
+.sub-content-icon > svg {
+    height: 20px;
+    width: 20px;
+}
+
+.sub-content-icon > svg:hover {
+    cursor: pointer;
 }
 
 .right-main {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 300px;
     margin: 10px 10px 0px 0px;
 }
 
 .announcement {
-    border: 1px solid red;
+    box-shadow: 3px 3px #a3b0c2;
     width: 270px;
     background-color: #f8fafc;
+    border-radius: 10px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.announcement > span, .announcement-text > span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.announcement-text {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.announcement-text:first-child {
+    padding-top: 20px;
+}
+
+.announcement-text:nth-child(2) {
+    border-top: 1px solid #a3b0c2;
+    border-bottom: 1px solid #a3b0c2;
+    padding-top: 10px;
+}
+
+.announcement-text:last-child {
+    padding-bottom: 20px;
+}
+
+.announcement-text > p {
+    margin-top: 0px;
+    line-height: 15px;
 }
 
 .trending {
-    border: 1px solid blue;
+    box-shadow: 3px 3px #a3b0c2;
     width: 270px;
     background-color: #f8fafc;
+    border-radius: 10px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.trending-content {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.user-pic-bot {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.username-name {
+    margin-left: 10px;
+}
+
+.username-name > span:first-child {
+    font-weight: 500;
+}
+
+.username-name > span:last-child {
+    font-weight: 400;
 }
